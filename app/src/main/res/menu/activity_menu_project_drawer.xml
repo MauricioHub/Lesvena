@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_collect"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Collect" />
+        <item
+            android:id="@+id/nav_recognize"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Recognize" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Map View" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Gallery" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:title="" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="" />
+        </menu>
+    </item>
+
+</menu>

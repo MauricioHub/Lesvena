@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.nvm.lesvena.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+
+        <!--        <android.support.design.widget.TextInputLayout
+            android:id="@+id/signup_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/signup_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Especie"
+                android:editable="false"/>
+
+        </android.support.design.widget.TextInputLayout> -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Especie: "
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textNombreEspecie" />
+
+            <Spinner
+                android:id="@+id/spinner_nc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textNombreEspecie"
+                android:hint="Select Here" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cientificoCover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_nc" >
+
+                <EditText
+                    android:id="@+id/et4_cientifico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Cientifico"
+                    android:editable="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/descripcionCover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cientificoCover" >
+
+                <EditText
+                    android:id="@+id/et7_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Descripción"
+                    android:editable="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+<!--    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/descripcionCover"
+        android:hint="Select Status" />
+        -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado Especie: "
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textEstadoEspecie"
+                android:layout_below="@+id/descripcionCover" />
+
+            <Spinner
+                android:id="@+id/spinner_est"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textEstadoEspecie"
+                android:layout_below="@+id/descripcionCover"
+                android:hint="Select Here" />
+
+
+            <!--       <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion"
+                android:textSize="20dp"
+                android:layout_below="@+id/cientificoCover"/>
+
+            <TextView
+                android:id="@+id/estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textSize="20dp"
+                android:layout_below="@+id/descripcionCover"/>
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/design_spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_below="@+id/estado"
+                android:hint="Select Status" /> -->
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:background="#4CAF50"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
